@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.app{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Inter', sans-serif;
+    color: grey;
+}
+
+.main{
+    width:100%;
+    display:grid;
+    grid-template-columns: 80px minmax(200px,auto)  500px ;
+    grid-template-rows:84vh ;
+    justify-items: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:750px){
+    
+    .main{
+        display:flex;
+        flex-direction:column;
+    }
+    .playList{
+        order:2;
+    }
+}
